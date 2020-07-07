@@ -15,15 +15,15 @@
         </div>
         <div id="menu">
             <ul>
-                <li class="active"><a href="#">Главная</a></li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Преймущества</a></li>
-                <li><a href="#">Наши бургеры</a></li>
-                <li><a href="#">Адреса ресторанов</a></li>
+                <li class="active"><a href="#" id="main-btn">Главная</a></li>
+                <li><a href="#" id="about-us-btn">О нас</a></li>
+                <li><a href="#" id="features-btn">Преймущества</a></li>
+                <li><a href="#" id="stock-btn">Наши бургеры</a></li>
+                <li><a href="#" id="address-btn">Адреса ресторанов</a></li>
             </ul>
         </div>
         <div>
-            <button class="btn">Забронировать столик</button>
+            <button class="btn open-modal">Забронировать столик</button>
         </div>
 
     </div>
@@ -32,9 +32,9 @@
             Свежие бургеры
         </div>
         <div id="show-menu">
-            <button>
+            <a class="btn-yellow">
                 Посмотреть меню
-            </button>
+            </a>
         </div>
         <div id="title-text">
             <span>Такие сочные,</span> что пальчики оближешь!
@@ -702,7 +702,7 @@
                         <span>Ежедневно 9:00 — 23:00</span>
                     </div>
                     <div class="address-button">
-                        <button class="btn">Забронировать столик</button>
+                        <button class="btn open-modal">Забронировать столик</button>
                     </div>
                 </div>
             </div>
@@ -721,7 +721,7 @@
                         <span>Ежедневно 9:00 — 23:00</span>
                     </div>
                     <div class="address-button">
-                        <button class="btn">Забронировать столик</button>
+                        <button class="btn open-modal">Забронировать столик</button>
                     </div>
                 </div>
             </div>
@@ -743,6 +743,55 @@
     burgerclub 2019&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;все права защищены
 </div>
 
+<div id="reservation-container">
+    <div id="reservation">
+        <div id="reservation-cancel">
+            <img id="reservation-cancel-close" src="images/cancel.png" alt="">
+        </div>
+        <div id="reservation-content">
+            <h2 class="main-title">забронировать столик</h2>
+            <form action="" id="reserve" method="post">
+                <div class="reserve-input">
+                    <label for="name">Ваше имя</label>
+                    <div>
+                        <input type="text" name="name" id="name">
+                    </div>
+                </div>
+                <div class="reserve-input">
+                    <label for="count">Количество человек</label>
+                    <div>
+                        <input type="text" name="count" id="count">
+                    </div>
+                </div>
+                <div class="reserve-input">
+                    <label for="phone">Ваш телефон</label>
+                    <div>
+                        <input type="text" name="phone" id="phone">
+                    </div>
+                </div>
+                <div class="reserve-input">
+                    <label for="time">Желаемое время</label>
+                    <div>
+                        <input type="text" name="time" id="time">
+                    </div>
+                </div>
+            </form>
+            <div id="reservation-error">
+                Заполните все поля
+            </div>
+            <div id="reserve-button">
+                <button class="btn-yellow">Забронировать</button>
+            </div>
+        </div>
+        <div id="reservation-sent">
+            <h2 class="main-title">Спасибо за то, что выбрали нас!</h2>
+            <div id="reservation-sent-text">
+                Администратор BURGERCLUB свяжется с вами в течение 15 минут,
+                чтобы подтвердить бронирование
+            </div>
+        </div>
+    </div>
+</div>
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/main.js"></script>

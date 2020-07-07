@@ -2,14 +2,14 @@ $(document).ready(() => {
     $('.category').click((e) => {
         let currentElem = $(e.target);
         $('.products-container').hide();
-       let id = currentElem.data('id');
-       $('#' + id).show();
+        let id = currentElem.data('id');
+        $('#' + id).show();
 
-       $('.category').removeClass('active');
-       currentElem.addClass('active');
+        $('.category').removeClass('active');
+        currentElem.addClass('active');
 
-       $('#' + id + ' .products').slick('refresh');
-       $('#' + id + ' .products-nav').slick('refresh');
+        $('#' + id + ' .products').slick('refresh');
+        $('#' + id + ' .products-nav').slick('refresh');
 
     });
 
@@ -87,5 +87,67 @@ $(document).ready(() => {
         infinite: true,
         slidesToShow: 2,
         slidesToScroll: 2
+    });
+
+    $('.open-modal').click(() => {
+        $('#reservation-container').css('display', 'flex');
+    });
+
+    $('#reservation-cancel-close, #reservation-container').click((e) => {
+        if (e.target.id === 'reservation-container' || e.target.id === 'reservation-cancel-close') {
+            $('#reservation-container').css('display', 'none');
+        };
+    });
+
+    $('#reserve-button > button').click(() => {
+        let name = $('#name');
+        let count = $('#count');
+        let time = $('#time');
+        let phone = $('#phone');
+        $('#reservation-error').hide();
+
+        if (name.val() && count.val() && time.val() && phone.val()) {
+            $.ajax({
+                type: 'post',
+                url: 'mail.php',
+                data: 'name=' + name.val() + '&count=' + count.val() + '&phone=' + phone.val() + '&time=' + time.val(),
+                success: () => {
+                    $('#reservation-sent').show();
+                    $('#reservation-content').hide();
+                },
+                error: () => {
+                    $('#reservation-error').hide();
+                    alert('Ошибка бронирования. Свяжитесь, пожалуйста, по номеру телефона.');
+                }
+            })
+
+        } else {
+            $('#reservation-error').show();
+        }
+    });
+    $("#about-us-btn").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#description").offset().top
+        }, 2000);
+    });
+    $("#features-btn").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#features").offset().top
+        }, 2000);
+    });
+    $("#main-btn").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#titles").offset().top
+        }, 2000);
+    });
+    $("#stock-btn").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#stock").offset().top
+        }, 2000);
+    });
+    $("#address-btn").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#address").offset().top
+        }, 2000);
     });
 })

@@ -92,9 +92,6 @@ body {
     font-family: "Roboto Bold", sans-serif;
 }
 
-#reservation {
-
-}
 
 .btn {
     cursor: pointer;
@@ -139,8 +136,7 @@ body {
 #show-menu {
     margin-top: 58px;
 }
-
-#show-menu button {
+.btn-yellow {
     border: 0;
     outline: none;
     border-radius: 10px;
@@ -157,7 +153,7 @@ body {
     text-align: center;
 }
 
-#show-menu button:hover {
+.btn-yellow:hover {
     box-shadow: 0 0 13px 2px rgba(255, 199, 59, 0.68);
 }
 
@@ -246,12 +242,14 @@ body {
 }
 
 .main-title {
-    padding-top: 175px;
     font-size: 35px;
     font-family: "Roboto Bold", sans-serif;
     color: rgb(246, 165, 1);
     text-transform: uppercase;
     text-align: center;
+}
+#description .main-title {
+    padding-top: 175px;
 }
 
 #description-text {
@@ -612,4 +610,102 @@ body {
 
 #reviews .slick-next:before {
     content: url("../images/next-gray.png");
+}
+
+#reservation-container {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.92);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+}
+#reservation {
+    position: relative;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(63, 63, 63);
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 0 0 41px 8px rgba(2, 7, 8, 1);
+    width: 584px;
+    padding: 45px 35px 70px 35px;
+    box-sizing: border-box;
+}
+#reservation #reservation-cancel {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+#reservation h2.main-title {
+    font-size: 25px;
+}
+#reservation #reserve {
+    margin: 45px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#reservation #reserve .reserve-input label {
+    font-size: 11px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+    line-height: 22px;
+}
+#reservation #reserve .reserve-input {
+    margin-top: 15px;
+}
+#reservation #reserve .reserve-input input {
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-radius: 10px;
+    background: transparent;
+    outline: 0;
+    width: 248px;
+    height: 39px;
+    color: white;
+}
+#reserve-button {
+    text-align: center;
+}
+#reservation #reservation-sent {
+    display: none;
+}
+#reservation #reservation-sent h2.main-title {
+    margin-top: 95px;
+    font-size: 25px;
+    font-family: "Roboto Bold", sans-serif;
+    color: rgb(246, 165, 1);
+    text-transform: uppercase;
+}
+
+#reservation #reservation-sent #reservation-sent-text {
+    font-size: 15px;
+    font-family: "Roboto",sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.333;
+    text-align: center;
+    margin: 35px 0 110px 0;
+}
+#reservation-error {
+    color: red;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+    display: none;
+}
+#show-menu a.btn-yellow {
+    text-decoration: none;
+    display: block;
+    line-height: 50px;
 }
