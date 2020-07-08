@@ -152,7 +152,7 @@ $(document).ready(() => {
             scrollTop: $("#titles").offset().top
         }, 2000);
     });
-    $("#stock-btn").click(function () {
+    $("#stock-btn, #main-action-show-menu").click(function () {
         $('html, body').animate({
             scrollTop: $("#stock").offset().top
         }, 2000);
