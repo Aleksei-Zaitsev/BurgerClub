@@ -59,10 +59,16 @@ body {
 }
 
 #logo {
-
+    transition: 0.5s;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+#logo:hover {
+    box-shadow: 0 0 13px 2px rgba(250, 250, 245, 0.68);
 }
 
 #logo a {
+
     text-decoration: none;
     font-size: 30px;
     font-family: Captureit, sans-serif;
@@ -86,10 +92,16 @@ body {
     font-family: "Roboto", sans-serif;
     text-decoration: none;
     color: white;
+    transition: 0.5s;
 }
 
 #menu ul li.active a {
     font-family: "Roboto Bold", sans-serif;
+}
+
+#menu a:hover {
+    font-family: "Roboto Bold", sans-serif;
+
 }
 
 
@@ -105,6 +117,7 @@ body {
     text-transform: uppercase;
     color: white;
     letter-spacing: 0.7px;
+    transition: 0.5s;
 }
 
 .btn:hover {
@@ -151,6 +164,7 @@ body {
     text-transform: uppercase;
     line-height: 2;
     text-align: center;
+    transition: 0.3s;
 }
 
 .btn-yellow:hover {
@@ -295,6 +309,7 @@ body {
     line-height: 1.5;
     text-align: center;
     border-radius: 10px;
+    transition: 0.3s;
 }
 
 #category-container .category:hover {
@@ -388,6 +403,7 @@ body {
     align-items: center;
     justify-content: space-evenly;
     opacity: 0.3;
+    transition: 0.3s;
 }
 
 .products-nav .product-nav:hover {
