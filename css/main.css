@@ -308,6 +308,7 @@ body {
 }
 
 .products .product {
+   width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -375,7 +376,6 @@ body {
 }
 
 .products-nav {
-    width: 585px;
     margin-top: 10px;
     display: flex;
     margin-bottom: 90px;
@@ -386,6 +386,7 @@ body {
     height: 75px;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     opacity: 0.3;
 }
 
@@ -708,4 +709,11 @@ body {
     text-decoration: none;
     display: block;
     line-height: 50px;
+}
+
+#burger {
+    display: none;
+    color: white;
+    font-size: 32px;
+    line-height: 30px;
 }

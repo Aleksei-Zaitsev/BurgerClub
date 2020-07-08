@@ -86,7 +86,18 @@ $(document).ready(() => {
     $('#reviews').slick({
         infinite: true,
         slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToScroll: 2,
+        responsive: [
+            {
+                breakpoint: 579,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+                }
+        ]
     });
 
     $('.open-modal').click(() => {
@@ -96,7 +107,8 @@ $(document).ready(() => {
     $('#reservation-cancel-close, #reservation-container').click((e) => {
         if (e.target.id === 'reservation-container' || e.target.id === 'reservation-cancel-close') {
             $('#reservation-container').css('display', 'none');
-        };
+        }
+        ;
     });
 
     $('#reserve-button > button').click(() => {
@@ -125,29 +137,37 @@ $(document).ready(() => {
             $('#reservation-error').show();
         }
     });
-    $("#about-us-btn").click(function() {
+    $("#about-us-btn").click(function () {
         $('html, body').animate({
             scrollTop: $("#description").offset().top
         }, 2000);
     });
-    $("#features-btn").click(function() {
+    $("#features-btn").click(function () {
         $('html, body').animate({
             scrollTop: $("#features").offset().top
         }, 2000);
     });
-    $("#main-btn").click(function() {
+    $("#main-btn").click(function () {
         $('html, body').animate({
             scrollTop: $("#titles").offset().top
         }, 2000);
     });
-    $("#stock-btn").click(function() {
+    $("#stock-btn").click(function () {
         $('html, body').animate({
             scrollTop: $("#stock").offset().top
         }, 2000);
     });
-    $("#address-btn").click(function() {
+    $("#address-btn").click(function () {
         $('html, body').animate({
             scrollTop: $("#address").offset().top
         }, 2000);
+    });
+
+    $('#burger').click(() => {
+        $('#header').toggleClass('menu-open');
+    });
+
+    $('#header #menu ul li').click(() => {
+        $('#header').removeClass('menu-open');
     });
 })

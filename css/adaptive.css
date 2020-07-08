@@ -1,0 +1,386 @@
+@media screen and (min-width: 1921px) {
+    #first-block {
+        background-size: 100%;
+        background-position: bottom center;
+    }
+
+    #last-block {
+        background-size: 100%;
+    }
+
+    #description {
+        background-size: 100% 100%;
+    }
+}
+
+@media screen and (max-width: 1229px) {
+    #reviews {
+        width: 95%;
+    }
+
+    .products {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    #stock .slick-next {
+        left: unset;
+        right: -25px;
+    }
+}
+
+/*1024-1199*/
+@media screen and (max-width: 1199px) {
+    #header, #titles, #features, #description-content {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+
+    #header {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-top: 20px;
+    }
+
+    #header #menu ul {
+        margin: 0 auto;
+        padding: 15px 0 0 0;
+    }
+
+    #logo {
+        order: 1;
+    }
+
+    #menu {
+        width: 100%;
+        order: 3;
+    }
+
+    #action {
+        order: 2;
+    }
+
+    #features {
+        justify-content: space-evenly;
+    }
+
+    #description {
+        padding-bottom: 150px;
+    }
+
+    #description-content {
+        padding-top: 80px;
+        justify-content: space-evenly;
+    }
+
+    #description-image {
+        max-width: 400px;
+    }
+
+    #description-image img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    #reviews .review {
+        margin: 0 10px;
+    }
+
+    #last-block, #stock {
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #address-content .address-conteiner .address {
+        width: auto;
+        max-width: 470px;
+    }
+
+    #address-content .address-text, .address-number, .address-workhours {
+        padding: 0 50px;
+    }
+
+    #address-content .address-conteiner {
+        width: auto;
+    }
+
+    #address-content {
+        justify-content: space-evenly;
+    }
+
+    #last-block {
+        background-size: auto 100%;
+    }
+
+    #reviews .review {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #reviews .review .review-image {
+        margin-bottom: 30px;
+    }
+
+    #reviews .review .review-text .review-text-title {
+        text-align: center;
+    }
+}
+
+/*768-1023*/
+@media screen and (max-width: 1023px) {
+    .feature {
+        width: 300px;
+    }
+
+    #description-text p br {
+        display: none;
+    }
+
+    #address-content {
+        flex-wrap: wrap;
+    }
+
+    #address-content .address-conteiner {
+        margin: 15px 0;
+    }
+}
+
+
+/*568-767*/
+@media screen and (max-width: 767px) {
+    #menu ul {
+        max-width: 100%;
+        justify-content: flex-start;
+    }
+
+    #menu ul li {
+        list-style: none;
+        margin-right: 12px;
+
+    }
+    #title-burgers {
+        width: 500px;
+        font-size: 48px;
+    }
+    #title-text {
+        font-size: 24px;
+    }
+    #description-content {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #description-text #description-text-title {
+        margin: 20px 0;
+    }
+    #description-text p {
+        line-height: 18px;
+        margin: 10px 0;
+    }
+    #description-image img {
+        max-width: 350px;
+    }
+    #description {
+        background-size: auto 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .products .product .product-content-property {
+        width: 88px;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/*480-579*/
+@media screen and (max-width: 579px) {
+    #burger {
+        display: block;
+    }
+    #header {
+        position: relative;
+    }
+    #menu {
+        top: 74px;
+        position: fixed;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 3;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        display: none;
+    }
+    #menu ul {
+        display: block;
+        width: auto;
+    }
+    #menu ul li {
+        padding: 20px 0;
+    }
+    #header.menu-open {
+        background: rgba(0, 0, 0, 0.8);
+    }
+    #header.menu-open #menu {
+        display: block;
+    }
+
+    #title-burgers {
+        width: 400px;
+        height: 120px;
+        line-height: 120px;
+        font-size: 38px;
+        margin: 57px auto 0 auto;
+    }
+    #show-menu a.btn-yellow {
+        margin: 30px auto 0 auto;
+    }
+    #title-text {
+        margin: 55px;
+        font-size: 35px;
+        width: 350px;
+    }
+    .products .product {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .products .product .product-image {
+        width: auto;
+        height: auto;
+        max-width: 300px;
+    }
+    .products .product .product-content {
+        text-align: center;
+    }
+    .products .product .product-content .product-content-title {
+        margin: 20px 0;
+    }
+    .products .product .product-content .product-content-properties {
+        justify-content: space-between;
+    }
+    .products-nav {
+        margin-bottom: 0;
+        justify-content: space-evenly;
+    }
+    #last-block .main-title {
+        padding-top: 170px;
+    }
+    #reviews .review .review-text {
+        width: 100%;
+    }
+    #stock #category-container {
+        flex-wrap: wrap;
+    }
+    #description-content {
+        padding-top: 40px;
+    }
+    #menu {
+        top: 92px;
+    }
+    .products .product .product-content .product-content-properties {
+        justify-content: space-around;
+    }
+    #last-block #address .main-title {
+        padding-top: 40px;
+    }
+    #instagram a #instagram-image {
+        text-align: center;
+        margin: 45px auto 30px auto;
+    }
+    #last-block .main-title {
+        padding-top: 120px;
+    }
+    #first-block {
+        padding-bottom: 250px;
+    }
+    #address-content .address-text, .address-number, .address-workhours {
+        padding: 0 30px;
+    }
+    .products-nav .product-nav {
+        width: 55px;
+        height: 55px;
+    }
+    #last-block .main-title {
+        font-size: 28px;
+    }
+    #reservation #reserve {
+        justify-content: center;
+        margin: 5px 0;
+    }
+    #reservation-container {
+        overflow: scroll;
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+    #reservation-container #reservation {
+        max-width: 320px;
+        padding: 35px;
+    }
+    #reserve-button {
+        margin-top: 20px;
+    }
+}
+
+/*480-499*/
+@media screen and (max-width: 499px) {
+    #header #action {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #header #menu {
+        width: 100%;
+        top: 146px;
+    }
+
+    #title-burgers {
+        width: 280px;
+        height: 80px;
+        line-height: 80px;
+        font-size: 28px;
+    }
+
+    #title-text {
+        margin: 55px;
+        font-size: 24px;
+        width: 196px;
+    }
+
+    #first-block {
+        padding-bottom: 300px;
+    }
+
+    #description .main-title {
+        font-size: 28px;
+    }
+
+    #stock h2 {
+        font-size: 28px;
+    }
+
+    #address-content .address-text, .address-number, .address-workhours {
+        padding: 0px 25px;
+    }
+
+    .address-text, .address-number, .address-workhours span {
+        font-size: 13px;
+    }
+    .address-button .btn {
+        padding: 10px 12px;
+    }
+    .products-nav .product-nav {
+        width: 45px;
+        height: 45px;
+    }
+    #description-image img {
+        max-width: 303px;
+    }
+}
+/*320-479*/
+@media screen and (max-width: 479px) {
+
+}
