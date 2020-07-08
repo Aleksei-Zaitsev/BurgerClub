@@ -1,6 +1,6 @@
 <?php
 
-if ($_SERVE["REQUEST-METHOD"] == "POST") {
+if ($_SERVER["REQUEST-METHOD"] == "POST") {
     $name = $_POST['name'];
     $count = $_POST['count'];
     $phone = $_POST['phone'];
